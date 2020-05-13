@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Longa',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>LONGA</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_alt' => 'Longa',
 
     /*
     |--------------------------------------------------------------------------
@@ -209,84 +209,74 @@ return [
 
     'menu' => [
         [
-            'text' => 'search',
+            'text' => 'Pesquisar..',
             'search' => true,
             'topnav' => true,
         ],
+
+        ['header' => 'menu principal'],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Dashboard',
+            'url'  => '/home',
+            'icon' => 'fas fa-fw fa-home',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text' => 'Membros',
+            'url'  => 'membros',
+            'icon' => 'fas fa-fw fa-id-card-alt',
         ],
-        ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Grupos',
+            'url'  => 'grupos',
+            'icon' => 'fas fa-fw fa-users',
+        ],
+        [
+            'text' => 'Meus Grupos',
+            'url'  => 'grupos',
+            'icon' => 'fas fa-fw fa-users',
+        ],
+        [
+            'text' => 'Minhas Contas',
+            'url'  => 'contas',
+            'icon' => 'fas fa-fw fa-wallet',
+        ],
+        [
+            'text' => 'Contas',
+            'url'  => 'contas',
+            'icon' => 'fas fa-fw fa-wallet',
+        ],
+        [
+            'text' => 'Transações',
+            'url'  => 'transacoes',
+            'icon' => 'fas fa-fw fa-file-invoice-dollar',
+        ],
+        [
+            'text' => 'Minhas Transações',
+            'url'  => 'transacoes',
+            'icon' => 'fas fa-fw fa-file-invoice-dollar',
+        ],
+        ['header' => 'Outros'],
+        [
+            'text' => 'Usuarios',
+            'url'  => 'usuarios',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Configurações',
+            'url'  => 'configuracoes',
+            'icon' => 'fas fa-fw fa-cogs',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
+            'text' => 'Ajuda',
+            'url'  => 'ajuda',
+            'icon' => 'fas fa-fw fa-question',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
+            'text' => 'Sair',
+            'url'  => 'sair',
+            'icon' => 'fas fa-fw fa-sign-out-alt',
         ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-        ],
+
     ],
 
     /*
