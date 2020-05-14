@@ -221,6 +221,22 @@ return [
             'icon' => 'fas fa-fw fa-home',
         ],
         [
+            'text' => 'Minhas Contas',
+            'icon' => 'fas fa-fw fa-wallet',
+            'submenu' => [
+                [
+                    'text' => 'Saldo',
+                    'url' => 'balances',
+                    'icon' => 'fas fa-fw fa-money-bill-alt',
+                ],
+                [
+                    'text' => 'Histórico',
+                    'url' => 'historic',
+                    'icon' => 'fas fa-fw fa-file-medical-alt',
+                ]
+            ]
+        ],
+        [
             'text' => 'Membros',
             'url'  => 'membros',
             'icon' => 'fas fa-fw fa-id-card-alt',
@@ -235,11 +251,7 @@ return [
             'url'  => 'grupos',
             'icon' => 'fas fa-fw fa-users',
         ],
-        [
-            'text' => 'Minhas Contas',
-            'url'  => 'contas',
-            'icon' => 'fas fa-fw fa-wallet',
-        ],
+
         [
             'text' => 'Contas',
             'url'  => 'contas',
